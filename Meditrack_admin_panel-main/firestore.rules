@@ -1,0 +1,59 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper: is the requester a signed-in admin?
+    function isAdmin() {
+      return request.auth != null &&
+             exists(/databases/$(database)/documents/admins/$(request.auth.uid));
+    }
+
+    // Helper: is the requester the patient who owns this doc?
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    // ── Admins collection ──────────────────────────────────────────────────────
+    // Admins can read/write their own profile; only admins can list all admins
+    match /admins/{adminId} {
+      allow read, write: if isAdmin() || isOwner(adminId);
+      // Allow first-time self-registration (creating own doc during signup)
+      allow create: if request.auth != null && request.auth.uid == adminId;
+    }
+
+    // ── Patients collection ────────────────────────────────────────────────────
+    // Admins have full access; a patient can read their own record
+    match /patients/{patientId} {
+      allow read, write, create, update, delete: if isAdmin();
+      // Patient can read their own record (by matching patientId field)
+      allow read: if request.auth != null &&
+                     resource.data.get('authUid', '') == request.auth.uid;
+    }
+
+    // ── Users collection (patient app profiles) ───────────────────────────────
+    // The secondary-app patient creation writes here authenticated as the patient.
+    // The patient can read/write their own user doc.
+    // Admins can also read/write any user doc.
+    match /users/{userId} {
+      allow read, write, create, update: if request.auth != null &&
+                                           (request.auth.uid == userId || isAdmin());
+    }
+
+    // ── Medicines collection ───────────────────────────────────────────────────
+    match /medicines/{medicineId} {
+      allow read, write, create, update, delete: if isAdmin();
+      // Patient can read medicines prescribed for them
+      allow read: if request.auth != null;
+    }
+
+    // ── Compliance collection ─────────────────────────────────────────────────
+    match /compliance/{complianceId} {
+      allow read, write, create, update: if request.auth != null;
+    }
+
+    // ── Notifications collection ──────────────────────────────────────────────
+    match /notifications/{notifId} {
+      allow read, write, create, update, delete: if request.auth != null;
+    }
+  }
+}

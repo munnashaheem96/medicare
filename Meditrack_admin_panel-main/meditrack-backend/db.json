@@ -1,0 +1,2325 @@
+{
+  "patients": [
+    {
+      "id": "P001",
+      "name": "Aarav Sharma",
+      "mobile": "9876543210",
+      "age": 45,
+      "gender": "Male",
+      "bloodGroup": "B+",
+      "condition": "Hypertension",
+      "doctor": "Dr. Mehta (Cardiologist)",
+      "joinDate": "2026-04-20",
+      "status": "Active",
+      "notes": "",
+      "fcmToken": ""
+    },
+    {
+      "id": "P002",
+      "name": "Priya Nair",
+      "mobile": "9123456780",
+      "age": 33,
+      "gender": "Female",
+      "bloodGroup": "O+",
+      "condition": "Diabetes Type 2",
+      "doctor": "Dr. Rao (Endocrinologist)",
+      "joinDate": "2026-04-20",
+      "status": "Active",
+      "notes": "",
+      "fcmToken": ""
+    },
+    {
+      "id": "P003",
+      "name": "Rohan Verma",
+      "mobile": "9988776655",
+      "age": 58,
+      "gender": "Male",
+      "bloodGroup": "A-",
+      "condition": "Cardiac Care",
+      "doctor": "Dr. Mehta (Cardiologist)",
+      "joinDate": "2026-04-20",
+      "status": "Active",
+      "notes": "",
+      "fcmToken": ""
+    },
+    {
+      "id": "P004",
+      "name": "Sunita Patel",
+      "mobile": "9011223344",
+      "age": 27,
+      "gender": "Female",
+      "bloodGroup": "AB+",
+      "condition": "Thyroid",
+      "doctor": "Dr. Singh (Endocrinologist)",
+      "joinDate": "2026-04-20",
+      "status": "Inactive",
+      "notes": "",
+      "fcmToken": ""
+    }
+  ],
+  "medicines": [
+    {
+      "id": "M001",
+      "patientId": "P001",
+      "patientName": "Aarav Sharma",
+      "medicineName": "Amlodipine 5mg",
+      "timings": [
+        "morning",
+        "night"
+      ],
+      "mealInstruction": "after",
+      "startDate": "2026-01-10",
+      "endDate": "2026-07-10",
+      "notes": "Take with water",
+      "status": "Active",
+      "createdAt": "2026-04-20T18:31:53.402Z"
+    },
+    {
+      "id": "M002",
+      "patientId": "P001",
+      "patientName": "Aarav Sharma",
+      "medicineName": "Losartan 50mg",
+      "timings": [
+        "morning"
+      ],
+      "mealInstruction": "before",
+      "startDate": "2026-01-10",
+      "endDate": "2026-07-10",
+      "notes": "",
+      "status": "Active",
+      "createdAt": "2026-04-20T18:31:53.402Z"
+    },
+    {
+      "id": "M003",
+      "patientId": "P002",
+      "patientName": "Priya Nair",
+      "medicineName": "Metformin 500mg",
+      "timings": [
+        "morning",
+        "evening",
+        "night"
+      ],
+      "mealInstruction": "after",
+      "startDate": "2026-02-05",
+      "endDate": "2026-08-05",
+      "notes": "Avoid on empty stomach",
+      "status": "Active",
+      "createdAt": "2026-04-20T18:31:53.402Z"
+    },
+    {
+      "id": "M004",
+      "patientId": "P003",
+      "patientName": "Rohan Verma",
+      "medicineName": "Aspirin 75mg",
+      "timings": [
+        "morning"
+      ],
+      "mealInstruction": "after",
+      "startDate": "2026-01-22",
+      "endDate": "2026-07-22",
+      "notes": "",
+      "status": "Active",
+      "createdAt": "2026-04-20T18:31:53.402Z"
+    },
+    {
+      "id": "M005",
+      "patientId": "P004",
+      "patientName": "Sunita Patel",
+      "medicineName": "Levothyroxine 50mcg",
+      "timings": [
+        "morning"
+      ],
+      "mealInstruction": "before",
+      "startDate": "2026-03-14",
+      "endDate": "2026-09-14",
+      "notes": "Take 30 min before breakfast",
+      "status": "Active",
+      "createdAt": "2026-04-20T18:31:53.402Z"
+    }
+  ],
+  "compliance": [
+    {
+      "id": "b7aa3c94-3e1c-415e-b1bf-83c133c80f22",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-20",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-20T18:31:53.402Z"
+    },
+    {
+      "id": "5229f92e-5f6e-4e69-bfa6-8e6e40b5f27b",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-20",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-20T18:31:53.402Z"
+    },
+    {
+      "id": "2ae76645-7f36-40d0-adc9-202843f1fa0c",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-20",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-20T18:31:53.402Z"
+    },
+    {
+      "id": "750d7215-d0d2-4de0-9e05-dabb7a50d63b",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-19",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-19T18:31:53.402Z"
+    },
+    {
+      "id": "132fcfe7-3966-4920-921f-19c2085b3202",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-19",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-19T18:31:53.402Z"
+    },
+    {
+      "id": "f20a271e-2bfe-4093-8936-fb98f8153623",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-19",
+      "timing": "morning",
+      "status": "missed",
+      "loggedAt": "2026-04-19T18:31:53.402Z"
+    },
+    {
+      "id": "cdb4172b-70e9-458d-b1db-b5d55e7821b0",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-18",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-18T18:31:53.402Z"
+    },
+    {
+      "id": "ff38f415-ab9c-4f6a-a641-f264210a08f7",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-18",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-18T18:31:53.402Z"
+    },
+    {
+      "id": "c51f82c0-0335-4209-841c-95627d789847",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-18",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-18T18:31:53.402Z"
+    },
+    {
+      "id": "e529e0ce-990b-4c8e-a9c4-756223d58e39",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-17",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-17T18:31:53.402Z"
+    },
+    {
+      "id": "3601b466-1c3a-435c-9214-135d55e705d1",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-17",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-17T18:31:53.402Z"
+    },
+    {
+      "id": "8aa4a742-a276-4ff0-8a3a-e9abeba54a4f",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-17",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-17T18:31:53.402Z"
+    },
+    {
+      "id": "7e2abd4f-9531-40e6-bfb4-a4f91932c4aa",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-16",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-16T18:31:53.402Z"
+    },
+    {
+      "id": "fa98cb66-ba76-40b9-bf1c-61f815286400",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-16",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-16T18:31:53.402Z"
+    },
+    {
+      "id": "a91c3f2b-2dc3-42cc-a3a9-709ad9bc5d77",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-16",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-16T18:31:53.402Z"
+    },
+    {
+      "id": "7e1bead2-7ac5-409f-9aad-6cf5b0ab9b1a",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-15",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-15T18:31:53.402Z"
+    },
+    {
+      "id": "4ada256c-0ffd-46e9-991c-e64390842fe5",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-15",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-15T18:31:53.402Z"
+    },
+    {
+      "id": "4c4f54de-3e70-4eeb-be3a-b52110df5311",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-15",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-15T18:31:53.402Z"
+    },
+    {
+      "id": "bf27bbee-b44e-4e9c-8571-dc6031daa4c1",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-14",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-14T18:31:53.402Z"
+    },
+    {
+      "id": "4d91ac8f-127d-4db3-b7ca-ee2e017c1655",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-14",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-14T18:31:53.402Z"
+    },
+    {
+      "id": "502bc84d-31fd-4ff1-a977-08d12409202c",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-14",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-14T18:31:53.402Z"
+    },
+    {
+      "id": "3f1e77f5-bd2a-429f-9b70-4bc2fd6149f8",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-13",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-13T18:31:53.402Z"
+    },
+    {
+      "id": "ff8b8072-b46e-4717-af7b-ab8671a293ff",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-13",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-13T18:31:53.402Z"
+    },
+    {
+      "id": "a07a5a15-8167-46b6-b4a9-22a001799d8d",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-13",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-13T18:31:53.402Z"
+    },
+    {
+      "id": "0f225c61-7d5a-4b00-b5ec-f514d454923f",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-12",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-12T18:31:53.402Z"
+    },
+    {
+      "id": "173f033d-aec8-4b49-9fbd-09013ecc6b78",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-12",
+      "timing": "night",
+      "status": "missed",
+      "loggedAt": "2026-04-12T18:31:53.402Z"
+    },
+    {
+      "id": "5ba2c35d-e0d5-47f5-ae10-99a0d104ce66",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-12",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-12T18:31:53.402Z"
+    },
+    {
+      "id": "10644650-bd4d-4973-9be3-cd1fce6278fd",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-11",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-11T18:31:53.402Z"
+    },
+    {
+      "id": "c96aa0ba-578c-412c-9237-b6347100485f",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-11",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-11T18:31:53.402Z"
+    },
+    {
+      "id": "0d8cb68a-62d7-4a14-ba7f-7bcb9b58596e",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-11",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-11T18:31:53.402Z"
+    },
+    {
+      "id": "0caf48e0-2754-4815-a771-66d2c642e654",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-10",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-10T18:31:53.402Z"
+    },
+    {
+      "id": "1f3719a6-f9dc-4aac-a11e-efae2669e75b",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-10",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-10T18:31:53.402Z"
+    },
+    {
+      "id": "a2c44783-9267-4203-8c51-7057d00fe070",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-10",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-10T18:31:53.402Z"
+    },
+    {
+      "id": "57e07758-e82d-4301-8a1b-8cecbee8b3a8",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-09",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-09T18:31:53.402Z"
+    },
+    {
+      "id": "4dbfee16-dbc9-44be-86a8-11855ccfacf9",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-09",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-09T18:31:53.402Z"
+    },
+    {
+      "id": "69e8fb2a-46ce-4283-9f76-b858d9845ec0",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-09",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-09T18:31:53.402Z"
+    },
+    {
+      "id": "d442edfa-abc9-45d0-8ed9-f9b19c0f5901",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-08",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-08T18:31:53.402Z"
+    },
+    {
+      "id": "e985e7e9-6cb3-4716-bb77-1068dd583c0b",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-08",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-08T18:31:53.402Z"
+    },
+    {
+      "id": "03c17a61-a6ac-4ac5-bfe3-04ade2e69765",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-08",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-08T18:31:53.402Z"
+    },
+    {
+      "id": "8d054c6f-e6aa-47a5-bbe2-c12bef5cc3a6",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-07",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-07T18:31:53.402Z"
+    },
+    {
+      "id": "8d0750c4-c43b-4073-af88-7c2b56aaf63a",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-07",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-07T18:31:53.402Z"
+    },
+    {
+      "id": "7681430e-b091-4bd1-bb41-083ff1d492a7",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-07",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-07T18:31:53.402Z"
+    },
+    {
+      "id": "33caaea7-150a-42a9-a6dc-e2474633dfe4",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-06",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-06T18:31:53.402Z"
+    },
+    {
+      "id": "f5f29314-20b5-4b04-be29-b25fda9b8edc",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-06",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-06T18:31:53.402Z"
+    },
+    {
+      "id": "fd8782f1-ee07-4fdb-ac0e-81bbbae7b571",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-06",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-06T18:31:53.402Z"
+    },
+    {
+      "id": "27fdf72c-a92e-4ac3-bd44-9eaee2f867c9",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-05",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-05T18:31:53.402Z"
+    },
+    {
+      "id": "93d62289-a51a-4794-99f6-a52c252e7a10",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-05",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-05T18:31:53.402Z"
+    },
+    {
+      "id": "6730c572-8368-4569-8140-3dd1eeb2cf8a",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-05",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-05T18:31:53.402Z"
+    },
+    {
+      "id": "6efb0d6b-cb94-4cad-864c-33d8d5ff8a21",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-04",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-04T18:31:53.402Z"
+    },
+    {
+      "id": "cfeb3916-efac-4570-b190-7cb1ea05c857",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-04",
+      "timing": "night",
+      "status": "skipped",
+      "loggedAt": "2026-04-04T18:31:53.402Z"
+    },
+    {
+      "id": "1228d286-02c9-40ae-be9e-5c2021aedef5",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-04",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-04T18:31:53.402Z"
+    },
+    {
+      "id": "233d76fa-84b9-4f47-b512-24ed4568c097",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-03",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-03T18:31:53.402Z"
+    },
+    {
+      "id": "d2fd393b-e75c-4c43-9be4-195fee15c68c",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-03",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-03T18:31:53.402Z"
+    },
+    {
+      "id": "3422017c-3130-411d-96ca-8c6d4531006b",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-03",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-03T18:31:53.402Z"
+    },
+    {
+      "id": "28906f5d-f544-4a55-bd16-eb937f38dd18",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-02",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-02T18:31:53.402Z"
+    },
+    {
+      "id": "451c72b8-b679-4c32-8e0f-c8a8b9dee717",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-02",
+      "timing": "night",
+      "status": "missed",
+      "loggedAt": "2026-04-02T18:31:53.402Z"
+    },
+    {
+      "id": "396701a3-45db-49bf-a15a-14c1db053af9",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-02",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-02T18:31:53.402Z"
+    },
+    {
+      "id": "7f528e08-19ba-4ba5-b01f-ebc34e7d5d97",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-01",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-01T18:31:53.402Z"
+    },
+    {
+      "id": "35eeddc5-e9be-4233-b2c3-004e96608b37",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-04-01",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-01T18:31:53.402Z"
+    },
+    {
+      "id": "6b5f8209-a7a5-4725-a65a-522c08ce07b5",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-04-01",
+      "timing": "morning",
+      "status": "missed",
+      "loggedAt": "2026-04-01T18:31:53.402Z"
+    },
+    {
+      "id": "92743f7c-5786-4c44-b3b1-481a7dd7cfa6",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-31",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-31T18:31:53.402Z"
+    },
+    {
+      "id": "d698cc22-7aec-4296-97ed-8b4f79616ff0",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-31",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-31T18:31:53.402Z"
+    },
+    {
+      "id": "7a77d4c3-0e6a-4e97-8b3d-2b7962293012",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-03-31",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-31T18:31:53.402Z"
+    },
+    {
+      "id": "e2fb20c0-c4d5-41fe-9ae5-2311786b272f",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-30",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-03-30T18:31:53.402Z"
+    },
+    {
+      "id": "3b786b84-784b-4c59-88e5-887cdfe9bbe4",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-30",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-30T18:31:53.402Z"
+    },
+    {
+      "id": "c1db9213-2cab-475e-83cf-9c805cb7f0a0",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-03-30",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-30T18:31:53.402Z"
+    },
+    {
+      "id": "887e5da7-1090-4544-b8a7-b7fd1af89512",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-29",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-03-29T18:31:53.402Z"
+    },
+    {
+      "id": "25281adb-93e9-4231-8fe7-8bbf90408df4",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-29",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-29T18:31:53.402Z"
+    },
+    {
+      "id": "6109168f-b5c9-42e8-9335-d2433d92e111",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-03-29",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-03-29T18:31:53.402Z"
+    },
+    {
+      "id": "d7a65c56-9df8-481f-9ff8-11457f5a664e",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-28",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-03-28T18:31:53.402Z"
+    },
+    {
+      "id": "a0f42c3e-0da2-4f09-89a8-1e5a123d2de9",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-28",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-28T18:31:53.402Z"
+    },
+    {
+      "id": "d9ee0147-1fc7-4523-801c-d1783cf7c197",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-03-28",
+      "timing": "morning",
+      "status": "missed",
+      "loggedAt": "2026-03-28T18:31:53.402Z"
+    },
+    {
+      "id": "d9730130-7a36-4d21-a2f7-b77132347997",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-27",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-27T18:31:53.402Z"
+    },
+    {
+      "id": "242d834d-204d-4777-b9b1-f5c59c7af3d5",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-27",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-27T18:31:53.402Z"
+    },
+    {
+      "id": "49ba477e-0b74-4a92-95d3-4a2d461705e0",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-03-27",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-27T18:31:53.402Z"
+    },
+    {
+      "id": "fc66812d-8570-40db-8617-ed219392c619",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-26",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-26T18:31:53.402Z"
+    },
+    {
+      "id": "4b92ec4e-7243-4815-9488-738fd52ef188",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-26",
+      "timing": "night",
+      "status": "missed",
+      "loggedAt": "2026-03-26T18:31:53.402Z"
+    },
+    {
+      "id": "3c5f1edf-2924-49ef-9dee-b509aa807a57",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-03-26",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-26T18:31:53.402Z"
+    },
+    {
+      "id": "a80c1cd1-3bdd-49a6-bd7a-ee524334d773",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-25",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-25T18:31:53.402Z"
+    },
+    {
+      "id": "75f3ed59-63c3-4e68-a62b-e4c65d5190a8",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-25",
+      "timing": "night",
+      "status": "skipped",
+      "loggedAt": "2026-03-25T18:31:53.402Z"
+    },
+    {
+      "id": "e1054963-1722-4b00-a70a-8ee2f16c2861",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-03-25",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-25T18:31:53.402Z"
+    },
+    {
+      "id": "cbc024ae-1167-4490-becb-92cf1dbd2a00",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-24",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-24T18:31:53.402Z"
+    },
+    {
+      "id": "d8d0e3dd-a4a9-4e38-8e9a-e5fbf8e8334a",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-24",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-24T18:31:53.402Z"
+    },
+    {
+      "id": "2708e277-afe0-4b2f-bee0-f6bf5202ca4c",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-03-24",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-03-24T18:31:53.402Z"
+    },
+    {
+      "id": "50b46d0f-5938-4569-b430-2233ec2d8c80",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-23",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-23T18:31:53.402Z"
+    },
+    {
+      "id": "cc4bea38-148a-4f9c-9965-48d89a3e0340",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-23",
+      "timing": "night",
+      "status": "missed",
+      "loggedAt": "2026-03-23T18:31:53.402Z"
+    },
+    {
+      "id": "464b0079-c170-4497-af24-48f45747adb7",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-03-23",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-03-23T18:31:53.402Z"
+    },
+    {
+      "id": "1badd824-6c91-412d-91b6-6cdac8437db3",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-22",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-22T18:31:53.402Z"
+    },
+    {
+      "id": "ce7f0ecb-583b-4b20-9c71-c5bd20968529",
+      "patientId": "P001",
+      "medicineId": "M001",
+      "date": "2026-03-22",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-22T18:31:53.402Z"
+    },
+    {
+      "id": "6ae08575-4059-4e24-b24b-6e3d4e406c0d",
+      "patientId": "P001",
+      "medicineId": "M002",
+      "date": "2026-03-22",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-22T18:31:53.402Z"
+    },
+    {
+      "id": "7e3dd265-576c-4123-84f5-351d8172d20e",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-20",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-20T18:31:53.402Z"
+    },
+    {
+      "id": "099bf573-88e8-4856-803d-a91b95d97b88",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-20",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-20T18:31:53.402Z"
+    },
+    {
+      "id": "50df0026-c610-461f-9f62-8235161981d0",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-20",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-20T18:31:53.402Z"
+    },
+    {
+      "id": "8176822f-9592-4029-9103-70a2c1083827",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-19",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-19T18:31:53.402Z"
+    },
+    {
+      "id": "a4de1a57-66f0-497a-9df8-48fb86a9a981",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-19",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-19T18:31:53.402Z"
+    },
+    {
+      "id": "64648b10-9624-4b97-ab3d-065fa895c31c",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-19",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-19T18:31:53.402Z"
+    },
+    {
+      "id": "3958d2e4-03b4-4da4-bdc0-2060f085a340",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-18",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-18T18:31:53.402Z"
+    },
+    {
+      "id": "3c9047b5-d919-4aa9-8769-22a7a29b21a9",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-18",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-18T18:31:53.402Z"
+    },
+    {
+      "id": "3c10a631-6770-4614-b205-9bf2ec4d5691",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-18",
+      "timing": "night",
+      "status": "skipped",
+      "loggedAt": "2026-04-18T18:31:53.402Z"
+    },
+    {
+      "id": "5f54dde1-0492-4df5-ba1e-5696ca0a6760",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-17",
+      "timing": "morning",
+      "status": "missed",
+      "loggedAt": "2026-04-17T18:31:53.402Z"
+    },
+    {
+      "id": "07a98ec5-662c-4ba0-a389-2227651c2ed3",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-17",
+      "timing": "evening",
+      "status": "skipped",
+      "loggedAt": "2026-04-17T18:31:53.402Z"
+    },
+    {
+      "id": "caf396a0-d5b9-4fde-8903-d842a07dd579",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-17",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-17T18:31:53.402Z"
+    },
+    {
+      "id": "3e5fb50f-224c-44b2-99db-e163b0093253",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-16",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-16T18:31:53.402Z"
+    },
+    {
+      "id": "02b2d1bb-d173-49b7-b8d6-2b0b87e223e6",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-16",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-16T18:31:53.402Z"
+    },
+    {
+      "id": "4964f361-53b5-4522-a5be-2c3ab4bb1d69",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-16",
+      "timing": "night",
+      "status": "missed",
+      "loggedAt": "2026-04-16T18:31:53.402Z"
+    },
+    {
+      "id": "5ba02ffc-52e8-4efc-86f7-e69c9536a2a5",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-15",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-15T18:31:53.402Z"
+    },
+    {
+      "id": "1da815bd-8988-4579-8e49-2b863a0c7398",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-15",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-15T18:31:53.402Z"
+    },
+    {
+      "id": "8471fbb4-3b00-43a2-900d-072804635025",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-15",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-15T18:31:53.402Z"
+    },
+    {
+      "id": "8f17329e-7b05-4472-86e0-a2f6f7f8f981",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-14",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-14T18:31:53.402Z"
+    },
+    {
+      "id": "e62a2057-2f9c-4bed-a4e6-beb4e8b724b0",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-14",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-14T18:31:53.402Z"
+    },
+    {
+      "id": "52aa248b-0ec9-4f08-afee-0ac90866c37f",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-14",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-14T18:31:53.402Z"
+    },
+    {
+      "id": "46f93e4b-4a7d-41f4-8490-b45cf30b82de",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-13",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-13T18:31:53.402Z"
+    },
+    {
+      "id": "4118e4ec-7f3d-4129-ac7d-ae517d901d09",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-13",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-13T18:31:53.402Z"
+    },
+    {
+      "id": "ee6d0622-8651-47c2-8f32-eff9d7012f95",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-13",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-13T18:31:53.402Z"
+    },
+    {
+      "id": "63b0bc56-ab32-4578-aedb-ffe978df2e42",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-12",
+      "timing": "morning",
+      "status": "missed",
+      "loggedAt": "2026-04-12T18:31:53.402Z"
+    },
+    {
+      "id": "91a61874-fc69-4108-a218-56dae0a27859",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-12",
+      "timing": "evening",
+      "status": "missed",
+      "loggedAt": "2026-04-12T18:31:53.402Z"
+    },
+    {
+      "id": "13928931-f9b3-42f3-81c9-9bf37eb4f918",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-12",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-12T18:31:53.402Z"
+    },
+    {
+      "id": "c2f550c9-f247-48b2-a723-7788706be6ed",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-11",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-11T18:31:53.402Z"
+    },
+    {
+      "id": "12a1063e-a3ae-4619-aa23-dd5d7ece61fa",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-11",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-11T18:31:53.402Z"
+    },
+    {
+      "id": "a55cfbb3-3a68-4a91-8ddb-22305bccc974",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-11",
+      "timing": "night",
+      "status": "skipped",
+      "loggedAt": "2026-04-11T18:31:53.402Z"
+    },
+    {
+      "id": "2c5ffced-2cd4-4a0a-9f05-531e072ccc71",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-10",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-10T18:31:53.402Z"
+    },
+    {
+      "id": "ae2869bc-5666-497c-a832-8e57d7f15346",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-10",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-10T18:31:53.402Z"
+    },
+    {
+      "id": "461a2d20-294a-4e4a-880d-093fd977db19",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-10",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-10T18:31:53.402Z"
+    },
+    {
+      "id": "e303327f-5767-4848-9a2a-58e6ce1ee4fd",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-09",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-09T18:31:53.402Z"
+    },
+    {
+      "id": "4b7b71fe-4275-4e32-a6f7-3442ad42d581",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-09",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-09T18:31:53.402Z"
+    },
+    {
+      "id": "6d0762c7-1777-43a3-81b6-bfa4f7a2d4cb",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-09",
+      "timing": "night",
+      "status": "missed",
+      "loggedAt": "2026-04-09T18:31:53.402Z"
+    },
+    {
+      "id": "ba1f20ec-6b0f-44d5-8ff9-c39a04a72d98",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-08",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-08T18:31:53.402Z"
+    },
+    {
+      "id": "1593cee4-94be-43f1-a7da-115e944f87a1",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-08",
+      "timing": "evening",
+      "status": "skipped",
+      "loggedAt": "2026-04-08T18:31:53.402Z"
+    },
+    {
+      "id": "55fa9250-4cc0-457d-a250-8cfce8d74b74",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-08",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-08T18:31:53.402Z"
+    },
+    {
+      "id": "95524ae0-5e21-4a1a-9ef5-7715eac58baa",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-07",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-07T18:31:53.402Z"
+    },
+    {
+      "id": "74c6c4b5-3046-4a95-92c7-389c954101b5",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-07",
+      "timing": "evening",
+      "status": "missed",
+      "loggedAt": "2026-04-07T18:31:53.402Z"
+    },
+    {
+      "id": "580c2286-4bcb-4f28-a700-d3930ef760ae",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-07",
+      "timing": "night",
+      "status": "skipped",
+      "loggedAt": "2026-04-07T18:31:53.402Z"
+    },
+    {
+      "id": "373e2c6b-9260-44c1-8c5f-f99d9828bc7e",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-06",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-06T18:31:53.402Z"
+    },
+    {
+      "id": "9d88a4f2-a162-43af-a54b-1a838dc8f380",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-06",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-06T18:31:53.402Z"
+    },
+    {
+      "id": "fd8712f3-1af2-4555-bcdd-42fa16a9b4d4",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-06",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-06T18:31:53.402Z"
+    },
+    {
+      "id": "d146070a-2b4a-43e4-9c40-78efb98c607a",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-05",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-05T18:31:53.402Z"
+    },
+    {
+      "id": "7ced2cc2-2a3d-4f60-9ad4-255e3da75fca",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-05",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-05T18:31:53.402Z"
+    },
+    {
+      "id": "69a50668-d24f-495e-b1cc-ebc3b8876a90",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-05",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-05T18:31:53.402Z"
+    },
+    {
+      "id": "8c827712-52aa-426e-80e2-7a461a611a07",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-04",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-04T18:31:53.402Z"
+    },
+    {
+      "id": "25e12c0d-2645-4cd6-8817-5cd2ff61d099",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-04",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-04T18:31:53.402Z"
+    },
+    {
+      "id": "896bc2a1-33a7-4c20-bc27-aa7085b4a5d4",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-04",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-04T18:31:53.402Z"
+    },
+    {
+      "id": "ba5b4e31-9484-459d-aa05-b9107033d2f8",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-03",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-03T18:31:53.402Z"
+    },
+    {
+      "id": "cce5afeb-2e9b-4aef-91b2-e53ec1dc8e56",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-03",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-04-03T18:31:53.402Z"
+    },
+    {
+      "id": "384012ae-2052-4405-a50e-202d64d84dcd",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-03",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-03T18:31:53.402Z"
+    },
+    {
+      "id": "eb279369-e3bb-46a9-9483-c829372eaeb9",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-02",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-02T18:31:53.402Z"
+    },
+    {
+      "id": "c6c05323-2c2a-458d-a4c1-5bca6510e0c1",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-02",
+      "timing": "evening",
+      "status": "skipped",
+      "loggedAt": "2026-04-02T18:31:53.402Z"
+    },
+    {
+      "id": "0bb317aa-4111-46fa-a5a9-f4e523c7feff",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-02",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-04-02T18:31:53.402Z"
+    },
+    {
+      "id": "976f8b3f-0942-4398-b1de-76bfa2bc8160",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-01",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-01T18:31:53.402Z"
+    },
+    {
+      "id": "564a3c4b-17c2-4db1-9fc6-61e187ec61b7",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-01",
+      "timing": "evening",
+      "status": "skipped",
+      "loggedAt": "2026-04-01T18:31:53.402Z"
+    },
+    {
+      "id": "6c78b159-b368-4102-971a-cd4ffdfd7bc2",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-04-01",
+      "timing": "night",
+      "status": "skipped",
+      "loggedAt": "2026-04-01T18:31:53.402Z"
+    },
+    {
+      "id": "6573fa1e-c233-436d-b728-885f851c9e72",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-31",
+      "timing": "morning",
+      "status": "missed",
+      "loggedAt": "2026-03-31T18:31:53.402Z"
+    },
+    {
+      "id": "b249e6f3-938b-41ef-97fd-bb6632bc6f4b",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-31",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-03-31T18:31:53.402Z"
+    },
+    {
+      "id": "6e0a6247-c83a-4fd7-8911-03a62dfa62ae",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-31",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-31T18:31:53.402Z"
+    },
+    {
+      "id": "ae4a769a-0fb1-4b77-ab69-4be05e55a52c",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-30",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-30T18:31:53.402Z"
+    },
+    {
+      "id": "e7508538-3a1e-4423-96ca-39e6fb50f262",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-30",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-03-30T18:31:53.402Z"
+    },
+    {
+      "id": "5e5268ba-c478-439a-81d0-2d2f5363c6e2",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-30",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-30T18:31:53.402Z"
+    },
+    {
+      "id": "e31abf54-e5ff-4e49-8d07-57ceda77ad94",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-29",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-29T18:31:53.402Z"
+    },
+    {
+      "id": "cbb5a978-fa6e-428f-9e70-685ab6d987f3",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-29",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-03-29T18:31:53.402Z"
+    },
+    {
+      "id": "5a3dcc9a-5ad1-4e64-b95e-094890cdcbd1",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-29",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-29T18:31:53.402Z"
+    },
+    {
+      "id": "1da3088f-f6a4-44f9-a3b6-c975f0ca0bec",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-28",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-28T18:31:53.402Z"
+    },
+    {
+      "id": "d52cf678-d0ad-4e50-a1d4-4e26d68d5205",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-28",
+      "timing": "evening",
+      "status": "skipped",
+      "loggedAt": "2026-03-28T18:31:53.402Z"
+    },
+    {
+      "id": "4a4bda9b-deb5-4028-86a3-d05630149f69",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-28",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-28T18:31:53.402Z"
+    },
+    {
+      "id": "3fe195b6-e6a0-417f-a4f4-6e91ebd088d1",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-27",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-03-27T18:31:53.402Z"
+    },
+    {
+      "id": "8b13b8c3-e936-4bc0-8f3a-7c3d967464c3",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-27",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-03-27T18:31:53.402Z"
+    },
+    {
+      "id": "c0f6c97b-7ad3-415d-afa8-20f6fb91bcf6",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-27",
+      "timing": "night",
+      "status": "missed",
+      "loggedAt": "2026-03-27T18:31:53.402Z"
+    },
+    {
+      "id": "7fd865b1-d13d-4a9f-a854-074bc6eccd6c",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-26",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-26T18:31:53.402Z"
+    },
+    {
+      "id": "11a4a4da-87bf-4b49-85a1-789d13826fd6",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-26",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-03-26T18:31:53.402Z"
+    },
+    {
+      "id": "513098d5-baff-4d59-8164-328735b68e00",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-26",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-26T18:31:53.402Z"
+    },
+    {
+      "id": "4f682fa3-b2ff-40a9-8052-37649c0f7cc1",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-25",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-25T18:31:53.402Z"
+    },
+    {
+      "id": "8c8ce852-b145-4210-b1df-178762668d91",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-25",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-03-25T18:31:53.402Z"
+    },
+    {
+      "id": "b9de4f41-a947-4826-bcc9-c7832d5c230f",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-25",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-25T18:31:53.402Z"
+    },
+    {
+      "id": "39d4b484-50d4-45f8-8c10-fc0a06e706ab",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-24",
+      "timing": "morning",
+      "status": "missed",
+      "loggedAt": "2026-03-24T18:31:53.402Z"
+    },
+    {
+      "id": "2d49bc6a-2650-4bb2-8304-0bc4e5f50958",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-24",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-03-24T18:31:53.402Z"
+    },
+    {
+      "id": "c65f2695-259e-4228-96ce-fa29a1b19edf",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-24",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-24T18:31:53.402Z"
+    },
+    {
+      "id": "c18881fb-4dce-4214-9a7f-180dfdc9fd02",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-23",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-23T18:31:53.402Z"
+    },
+    {
+      "id": "8f0657d3-7c7f-4166-a5c8-0225b3f689be",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-23",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-03-23T18:31:53.402Z"
+    },
+    {
+      "id": "e72ad31c-c980-40af-8a3d-2274a3001d8b",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-23",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-23T18:31:53.402Z"
+    },
+    {
+      "id": "f8a359a0-59d8-4bc1-9283-38ffca08945a",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-22",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-22T18:31:53.402Z"
+    },
+    {
+      "id": "c00a805b-ca72-43ad-be2b-8b19304d6422",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-22",
+      "timing": "evening",
+      "status": "taken",
+      "loggedAt": "2026-03-22T18:31:53.402Z"
+    },
+    {
+      "id": "0d276e7d-88d1-458c-9687-477129fa29d1",
+      "patientId": "P002",
+      "medicineId": "M003",
+      "date": "2026-03-22",
+      "timing": "night",
+      "status": "taken",
+      "loggedAt": "2026-03-22T18:31:53.402Z"
+    },
+    {
+      "id": "50c9d5c6-fd6f-4bfa-87a2-d2a1a4e0b68c",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-20",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-20T18:31:53.402Z"
+    },
+    {
+      "id": "ac7fe889-59ea-452c-9a22-bb47c4966e12",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-19",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-19T18:31:53.402Z"
+    },
+    {
+      "id": "c81a5057-956a-4048-9cbf-e69646fef2ac",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-18",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-18T18:31:53.402Z"
+    },
+    {
+      "id": "48931b70-a899-4a5f-a07e-4936628e81c1",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-17",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-17T18:31:53.402Z"
+    },
+    {
+      "id": "15939029-18ed-4c65-9c49-a25b0a2f2d67",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-16",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-16T18:31:53.402Z"
+    },
+    {
+      "id": "a5cf9532-e9fa-494f-baf4-20315a737fdb",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-15",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-15T18:31:53.402Z"
+    },
+    {
+      "id": "b804699c-bcb8-4e05-83a0-9f06a2e0bcca",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-14",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-14T18:31:53.402Z"
+    },
+    {
+      "id": "65d4ebbd-f180-4b14-b9d8-61c15673a8b5",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-13",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-13T18:31:53.402Z"
+    },
+    {
+      "id": "fdd26e0d-d0bf-4c22-a0a9-31c1fdaa6ce8",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-12",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-12T18:31:53.402Z"
+    },
+    {
+      "id": "fd5bcb51-b693-446a-9d51-466585a77407",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-11",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-11T18:31:53.402Z"
+    },
+    {
+      "id": "73bf28af-10b0-497a-a4b7-f3d52f68e660",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-10",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-10T18:31:53.402Z"
+    },
+    {
+      "id": "1dff4710-818b-4647-bdae-656bb3f32a58",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-09",
+      "timing": "morning",
+      "status": "missed",
+      "loggedAt": "2026-04-09T18:31:53.402Z"
+    },
+    {
+      "id": "24d7aacf-9141-4462-9f5d-f412b0c8751d",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-08",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-08T18:31:53.402Z"
+    },
+    {
+      "id": "25703feb-0c1e-4b38-8622-c1d1f7b54625",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-07",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-07T18:31:53.402Z"
+    },
+    {
+      "id": "81d768e9-9fc5-447b-bbc3-c4c650cad828",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-06",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-06T18:31:53.402Z"
+    },
+    {
+      "id": "8c6caf04-854b-4af0-a1c4-deb1f77e1792",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-05",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-05T18:31:53.402Z"
+    },
+    {
+      "id": "fd64dad7-70e7-40e2-a202-5930ed22bfeb",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-04",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-04T18:31:53.402Z"
+    },
+    {
+      "id": "a525236b-d2ef-475e-9207-4bfcb1cccab6",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-03",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-03T18:31:53.402Z"
+    },
+    {
+      "id": "9cc85054-2310-440f-a2b3-aaf5a94c8311",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-02",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-02T18:31:53.402Z"
+    },
+    {
+      "id": "945e6cba-3c1b-4b31-a585-9d334d9e29bd",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-04-01",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-01T18:31:53.402Z"
+    },
+    {
+      "id": "c3fb6ac2-f3f0-4cc6-ae27-668149c72f12",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-03-31",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-31T18:31:53.402Z"
+    },
+    {
+      "id": "0d7f0cf8-55c0-4679-84b6-47efb76ef103",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-03-30",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-30T18:31:53.402Z"
+    },
+    {
+      "id": "bc1035e5-d558-4dc8-9fe4-fdf46f44a1b3",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-03-29",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-29T18:31:53.402Z"
+    },
+    {
+      "id": "f75012ec-0e23-4ada-88cd-4294a66669bd",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-03-28",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-03-28T18:31:53.402Z"
+    },
+    {
+      "id": "f2981f3e-597a-4a0f-ac05-dd3f864be77b",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-03-27",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-27T18:31:53.402Z"
+    },
+    {
+      "id": "14118af1-1978-45e3-a8a8-47e94360aabe",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-03-26",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-26T18:31:53.402Z"
+    },
+    {
+      "id": "0d3bc333-3f8a-4578-a23f-23d6d8500c50",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-03-25",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-25T18:31:53.402Z"
+    },
+    {
+      "id": "a7e9dd08-c0f7-45b4-8561-3959bc4fddec",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-03-24",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-24T18:31:53.402Z"
+    },
+    {
+      "id": "22f0c984-7948-45be-9170-e705e5d745e2",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-03-23",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-23T18:31:53.402Z"
+    },
+    {
+      "id": "c24ec90d-5a8a-4566-adc6-4a8a41b6d19a",
+      "patientId": "P003",
+      "medicineId": "M004",
+      "date": "2026-03-22",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-22T18:31:53.402Z"
+    },
+    {
+      "id": "07d2b5e3-f91c-4731-ae33-a131afc75d7e",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-20",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-20T18:31:53.402Z"
+    },
+    {
+      "id": "b897bd33-ff53-40f0-a278-985d655e8e95",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-19",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-19T18:31:53.402Z"
+    },
+    {
+      "id": "a29ad484-9679-43b9-88f5-55619092b95b",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-18",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-18T18:31:53.402Z"
+    },
+    {
+      "id": "a1f8d864-0638-4489-ae1d-5e6e458fb85b",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-17",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-17T18:31:53.402Z"
+    },
+    {
+      "id": "d34a9dcb-f934-464f-8da0-6a05f031e636",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-16",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-16T18:31:53.402Z"
+    },
+    {
+      "id": "cab0f26b-8705-42e1-a39f-221b38822878",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-15",
+      "timing": "morning",
+      "status": "missed",
+      "loggedAt": "2026-04-15T18:31:53.402Z"
+    },
+    {
+      "id": "08e9aeee-93fd-48cd-bb07-255fa1abf264",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-14",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-14T18:31:53.402Z"
+    },
+    {
+      "id": "4503e878-e5f9-4be6-8f68-4a37e3e8c588",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-13",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-13T18:31:53.402Z"
+    },
+    {
+      "id": "c942836c-fb8f-4c63-82b9-9dc0c13abfcd",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-12",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-12T18:31:53.402Z"
+    },
+    {
+      "id": "f13d82bf-9285-412e-85b2-9ea410c10d53",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-11",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-11T18:31:53.402Z"
+    },
+    {
+      "id": "5928a6bf-efbd-40e9-a5a3-a06a0e7cd362",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-10",
+      "timing": "morning",
+      "status": "missed",
+      "loggedAt": "2026-04-10T18:31:53.402Z"
+    },
+    {
+      "id": "ffb8756b-b2c7-414b-a4f7-fd5dd65aae01",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-09",
+      "timing": "morning",
+      "status": "missed",
+      "loggedAt": "2026-04-09T18:31:53.402Z"
+    },
+    {
+      "id": "86bbb84e-3226-4488-8c62-744337ced373",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-08",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-08T18:31:53.402Z"
+    },
+    {
+      "id": "13a8f8d7-e303-43d1-8058-9dc90d0aecf1",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-07",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-07T18:31:53.402Z"
+    },
+    {
+      "id": "ec718237-c299-4598-ac24-70efbdc7c8bf",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-06",
+      "timing": "morning",
+      "status": "skipped",
+      "loggedAt": "2026-04-06T18:31:53.402Z"
+    },
+    {
+      "id": "0d7e5967-39af-4f79-bed5-758f3babe785",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-05",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-05T18:31:53.402Z"
+    },
+    {
+      "id": "cbb27e65-5244-4116-9a67-5a93142281a4",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-04",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-04T18:31:53.402Z"
+    },
+    {
+      "id": "c3540e29-aa39-4b64-a578-8402376942f2",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-03",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-03T18:31:53.402Z"
+    },
+    {
+      "id": "2f506787-5306-4421-9d57-3d08e49453cf",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-02",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-02T18:31:53.402Z"
+    },
+    {
+      "id": "2f1a105f-f854-4e1d-8727-6d4b49d68bf3",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-04-01",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-04-01T18:31:53.402Z"
+    },
+    {
+      "id": "9e3729a9-99f8-40cf-8d91-212583fccbb3",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-03-31",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-31T18:31:53.402Z"
+    },
+    {
+      "id": "71673183-19d6-4b34-81b5-17ebd52d2ce8",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-03-30",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-30T18:31:53.402Z"
+    },
+    {
+      "id": "9e253731-1b5c-497e-a534-ae485aa5e9b8",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-03-29",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-29T18:31:53.402Z"
+    },
+    {
+      "id": "bb3b3023-4899-45b9-b139-6f4d8a85d7f9",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-03-28",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-28T18:31:53.402Z"
+    },
+    {
+      "id": "3baa7a9e-ad1f-4a66-b8ce-45840a4f4b69",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-03-27",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-27T18:31:53.402Z"
+    },
+    {
+      "id": "2d463f93-3459-4439-910f-c1b15ee93a2f",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-03-26",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-26T18:31:53.402Z"
+    },
+    {
+      "id": "5057c1c6-421c-4ec0-b2e1-7f7713ff031b",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-03-25",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-25T18:31:53.402Z"
+    },
+    {
+      "id": "95d93f6d-9a5f-4e6c-b49e-e7becee7edb5",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-03-24",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-24T18:31:53.402Z"
+    },
+    {
+      "id": "39a98c4c-d624-4e9a-b6fe-e0131ed404db",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-03-23",
+      "timing": "morning",
+      "status": "taken",
+      "loggedAt": "2026-03-23T18:31:53.402Z"
+    },
+    {
+      "id": "6bf01c72-9bc0-48f2-9b79-46307d21795a",
+      "patientId": "P004",
+      "medicineId": "M005",
+      "date": "2026-03-22",
+      "timing": "morning",
+      "status": "missed",
+      "loggedAt": "2026-03-22T18:31:53.402Z"
+    }
+  ],
+  "admins": [
+    {
+      "id": "4730ade0-82a5-418e-aee4-9428f4c4dc45",
+      "name": "Dr. Admin",
+      "email": "admin@meditrack.com",
+      "passwordHash": "$2a$10$ThB1/GmczdiFAf8rp/pt7O.gTJmJIfxvIDqSPvG3JzPutZWk62WGe",
+      "role": "Administrator",
+      "hospital": "General Hospital",
+      "phone": "",
+      "specialization": "General Medicine",
+      "createdAt": "2026-04-20T18:31:53.584Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "9c9f92cf-bf1a-41ba-bf70-67766e2b70da",
+      "type": "info",
+      "message": "Welcome to MediTrack Admin Panel!",
+      "time": "2026-04-20T18:31:53.584Z",
+      "unread": true,
+      "patientId": null
+    }
+  ]
+}
