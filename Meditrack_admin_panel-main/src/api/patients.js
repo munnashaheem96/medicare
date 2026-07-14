@@ -117,15 +117,16 @@ export const createPatient = async (data) => {
   const nextNum = maxNum + 1;
   const patientId = `P${String(nextNum).padStart(3, '0')}`;
   const baseEmail = `${patientId.toLowerCase()}@medicare.app`;
-  const defaultPassword = 'patients';
+  const defaultPassword = 'abc123456';
 
   // 2. Create the patient Auth user and write to 'users' collection using secondary app
-  const { email: finalEmail } = await createSecondaryAuthUserAndProfile(baseEmail, defaultPassword, patientId, data);
+  const { uid: authUid, email: finalEmail } = await createSecondaryAuthUserAndProfile(baseEmail, defaultPassword, patientId, data);
 
   // 3. Save the patient details in 'patients' collection using 'Pxxx' as doc ID
   const patientPayload = {
     ...data,
     id: patientId, // keep redundant id field inside document
+    authUid,       // Link the Auth UID so patients can access their records
     email: finalEmail,
     status: data.status || 'Active',
     joinDate: new Date().toLocaleDateString('en-IN', {

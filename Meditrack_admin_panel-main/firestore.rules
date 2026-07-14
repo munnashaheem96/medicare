@@ -22,12 +22,12 @@ service cloud.firestore {
     }
 
     // ── Patients collection ────────────────────────────────────────────────────
-    // Admins have full access; a patient can read their own record
+    // Admins have full access; a patient can read/update their own record
     match /patients/{patientId} {
       allow read, write, create, update, delete: if isAdmin();
-      // Patient can read their own record (by matching patientId field)
-      allow read: if request.auth != null &&
-                     resource.data.get('authUid', '') == request.auth.uid;
+      // Patient can read and update their own record (by matching authUid field)
+      allow read, update: if request.auth != null &&
+                             resource.data.get('authUid', '') == request.auth.uid;
     }
 
     // ── Users collection (patient app profiles) ───────────────────────────────

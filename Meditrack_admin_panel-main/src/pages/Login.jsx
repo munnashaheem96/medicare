@@ -65,7 +65,7 @@ export default function Login() {
 
   const fillDemo = () => {
     setEmail('admin@meditrack.com');
-    setPassword('admin123');
+    setPassword('abc123456');
     setName('MediTrack Admin');
     setError(''); setSuccess('');
   };
@@ -243,7 +243,7 @@ export default function Login() {
             {mode === 'login' ? 'Default credentials' : 'Quick-fill suggested credentials'}
           </div>
           <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-secondary)', marginBottom: 10 }}>
-            admin@meditrack.com · admin123
+            admin@meditrack.com · abc123456
           </div>
           <button
             type="button"
